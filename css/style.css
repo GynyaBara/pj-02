@@ -58,12 +58,12 @@ h4 {
 
   color: #e3b873;
 }
-.header-nav {
+.nav {
   list-style: none;
   display: flex;
   margin: 0;
 }
-.header-nav-item {
+.nav-item {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -512,4 +512,10 @@ hr {
 footer {
   height: 133px;
   background: #181818;
+}
+.footer-wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
