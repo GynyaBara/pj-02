@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/medi.css" />
 
     <title>ВЕРСТКА ЛЕНДИНГА</title>
   </head>
@@ -23,7 +24,9 @@
           <div class="logo">IC "Repair Design Project"</div>
           <nav>
             <ul class="nav">
-              <li><a class="nav-item" href="#home">Home</a></li>
+              <li>
+                <a class="nav-item" href="#home">Home</a>
+              </li>
               <li><a class="nav-item" href="#projects">PROJECTS</a></li>
               <li>
                 <a class="nav-item" href="#measurement">MEASUREMENT</a>
@@ -51,6 +54,9 @@
                 with work time saving up to 45 days and 20% from <br />
                 cost of materials due to the organization of work
               </p>
+
+              <button class="button">CALCULATE THE COST</button>
+              <button class="button">SUBMIT YOUR APPLICATION</button>
             </div>
           </div>
         </section>
@@ -91,11 +97,62 @@
               </div>
               <div class="projects-img">
                 <ul class="projects-img-items">
-                  <li><a href="">Rostov-on-Don, Admiral</a></li>
-                  <li><a href="">Sochi Thieves</a></li>
-                  <li><a href="">Rostov-on-Don Patriotic</a></li>
+                  <li class="projects-img-item">
+                    <a href="">Rostov-on-Don, Admiral</a>
+                  </li>
+                  <li class="projects-img-item">
+                    <a href="">Sochi Thieves</a>
+                  </li>
+                  <li class="projects-img-item">
+                    <a href="">Rostov-on-Don Patriotic</a>
+                  </li>
                 </ul>
                 <img src="./images/image.jpg" alt="" />
+              </div>
+            </div>
+            <div class="completed-projects-bloc-madia">
+              <div class="completed-projects-text">
+                <h2 class="title">
+                  Completed <br />
+                  projects
+                </h2>
+                <p class="text">
+                  Only a small part of the work performed by our company is
+                  presented on the site. For 14 years on in the construction
+                  market we have made happy more than 1000 families
+                </p>
+                <div class="projects-img">
+                  <a href=""
+                    ><div class="projects-item-media-left">
+                      <img class="left" src="images/left.svg" alt="" /></div
+                  ></a>
+                  <a href=""
+                    ><div class="projects-item-media-right">
+                      <img class="right" src="images/right.svg" alt="" /></div
+                  ></a>
+                </div>
+
+                <div class="projects-description">
+                  <div class="projects-city">
+                    <h3 class="title">City:</h3>
+                    <p>
+                      Rostov-on-Don <br />
+                      LCD admiral
+                    </p>
+                  </div>
+                  <div class="projects-area">
+                    <h3 class="title">apartment area:</h3>
+                    <p>81 m2</p>
+                  </div>
+                  <div class="projects-time">
+                    <h3 class="title">Repair time:</h3>
+                    <p>3.5 months</p>
+                  </div>
+                  <div class="projects-cost">
+                    <h3 class="title">Repair Cost:</h3>
+                    <p>Upon request</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -107,8 +164,10 @@
             <img src="./images/Group.png" alt="" />
             <img class="img-line" src="./images/Rectangle.png" alt="" />
           </div>
-          <div class="control-img"></div>
-          <hr />
+          <div class="control-img">
+            <img class="control-img-play" src="images/play.svg" alt="" />
+          </div>
+          <hr style="color: #e3b873" />
           <p class="control-text">
             At each facility, a camera is installed that broadcasts the progress
             of work on the clock. At any time, you can go to our website and
@@ -117,7 +176,7 @@
             you will receive a link to the broadcast.
           </p>
           <form class="control-form" action="" method="pos">
-            <div class="control-form-conteiner">
+            <div class="control-form-conteiner control-form-conteiner1">
               <p class="form-text">Name</p>
               <input
                 class="control-form-input"
@@ -136,14 +195,8 @@
               />
             </div>
             <button class="button">Submit</button>
-
-            <input
-              class="control-checkbox"
-              type="checkbox"
-              name="agree"
-              id="chek"
-              checked
-            /><label for="chek">
+            <label class="control-checkbox" for="chek">
+              <input type="checkbox" name="agree" id="chek" checked />
               I agree to the processing of personal data
             </label>
           </form>
@@ -210,22 +263,22 @@
             <div class="request-block">
               <div class="request-servis">
                 <div class="request-tex-block">
-                  <img class="krug" src="images/krug.png" alt="" />
+                  <p class="krug">01</p>
                   <p class="request-servis-text">
                     Our specialist will arrive for measurements per day contact,
                     or appoint a date convenient for you
                   </p>
                 </div>
                 <div class="request-tex-block">
-                  <img class="krug" src="images/krug.png" alt="" />
+                  <p class="krug">02</p>
                   <p class="request-servis-text">Free metering</p>
                 </div>
                 <div class="request-tex-block">
-                  <img class="krug" src="images/krug.png" alt="" />
+                  <p class="krug">03</p>
                   <p class="request-servis-text">Free consultation</p>
                 </div>
                 <div class="request-tex-block">
-                  <img class="krug" src="images/krug.png" alt="" />
+                  <p class="krug">04</p>
                   <p class="request-servis-text">
                     Get a cost estimate and <br />
                     the timing of your future repairs
@@ -268,7 +321,7 @@
               </div>
             </div>
             <div class="request-help">
-              <img src="images/krug.png" alt="" />
+              <p class="krug-porcy"><img src="images/porcy.svg" alt="" /></p>
               <p>
                 Help save 10 - 20% of the <br />
                 cost of materials
@@ -276,66 +329,77 @@
             </div>
           </div>
         </section>
+        <!--pictures for media query-->
+        <div class="fantasies-bloc-img-madia">
+          <h2 class="fantasies-bloc-subtitle">
+            We realize your <br />
+            wildest fantasies
+          </h2>
+          <div class="fantasie-imageklok-madia">
+            <a href=""
+              ><div class="projects-item-media-left">
+                <img class="left" src="images/left.svg" alt="" /></div
+            ></a>
+            <a href=""
+              ><div class="projects-item-media-right">
+                <img class="right" src="images/right.svg" alt="" /></div
+            ></a>
+          </div>
+        </div>
         <section class="fantasies" id="reviews">
-          <div class="container">
-            <div class="fantasies-bloc">
-              <div class="fantasies-bloc-realize">
-                <h2 class="fantasies-bloc-subtitle">
-                  We realize your wildest fantasies
-                </h2>
+          <div class="fantasies-bloc">
+            <div class="fantasies-bloc-realize">
+              <h2 class="fantasies-bloc-subtitle">
+                We realize your wildest fantasies
+              </h2>
 
-                <p class="fantasies-bloc-text">American classic</p>
-                <ul class="fantasies-bloc-list">
-                  <li><a class="fantasies-bloc-link" href="">Empire</a></li>
-                  <li><a class="fantasies-bloc-link" href="">Classical</a></li>
-                  <li><a class="fantasies-bloc-link" href="">Loft</a></li>
-                  <li><a class="fantasies-bloc-link" href="">Minimalism</a></li>
-                  <li><a class="fantasies-bloc-link" href="">Provence</a></li>
-                  <li>
-                    <a class="fantasies-bloc-link" href="">Romanticism</a>
-                  </li>
-                  <li>
-                    <a class="fantasies-bloc-link" href=""
-                      >Scandinavian style</a
-                    >
-                  </li>
-                  <li>
-                    <a class="fantasies-bloc-link" href=""
-                      >Mediterranean style</a
-                    >
-                  </li>
-                  <li><a class="fantasies-bloc-link" href="">High tech</a></li>
-                  <li>
-                    <a class="fantasies-bloc-link" href="">Eclecticism</a>
-                  </li>
-                </ul>
+              <ul class="fantasies-bloc-list">
+                <li>
+                  <a class="fantasies-bloc-link" href="">American classic</a>
+                </li>
+                <li><a class="fantasies-bloc-link" href="">Empire</a></li>
+                <li><a class="fantasies-bloc-link" href="">Classical</a></li>
+                <li><a class="fantasies-bloc-link" href="">Loft</a></li>
+                <li><a class="fantasies-bloc-link" href="">Minimalism</a></li>
+                <li><a class="fantasies-bloc-link" href="">Provence</a></li>
+                <li>
+                  <a class="fantasies-bloc-link" href="">Romanticism</a>
+                </li>
+                <li>
+                  <a class="fantasies-bloc-link" href="">Scandinavian style</a>
+                </li>
+                <li>
+                  <a class="fantasies-bloc-link" href="">Mediterranean style</a>
+                </li>
+                <li><a class="fantasies-bloc-link" href="">High tech</a></li>
+                <li>
+                  <a class="fantasies-bloc-link" href="">Eclecticism</a>
+                </li>
+              </ul>
+            </div>
+
+            <!--main page pictures-->
+            <div class="fantasies-bloc-img">
+              <div class="fantasies-bloc-img-one">
+                <img
+                  class="fantasie-imageklok"
+                  src="images/imageklok.png"
+                  alt="Картинка с часами"
+                />
+                <img
+                  class="fantasie-imagefan"
+                  src="images/imagefan.png"
+                  alt=""
+                />
               </div>
-              <div class="fantasies-bloc-img">
-                <div class="fantasies-bloc-img-one">
-                  <img
-                    class="fantasie-imageklok"
-                    src="images/imageklok.png"
-                    alt="Картинка с часами"
-                  />
-                  <img
-                    class="fantasie-imagefan"
-                    src="images/imagefan.png"
-                    alt=""
-                  />
-                </div>
-                <div class="fantasies-bloc-img-two">
-                  <img
-                    class="fantasie-imageho"
-                    src="images/imagehol.png"
-                    alt=""
-                  />
+              <div class="fantasies-bloc-img-two">
+                <img
+                  class="fantasie-imageho"
+                  src="images/imagehol.png"
+                  alt=""
+                />
 
-                  <img
-                    class="fantasie-imagfla"
-                    src="images/imagfla.png"
-                    alt=""
-                  />
-                </div>
+                <img class="fantasie-imagfla" src="images/imagfla.png" alt="" />
               </div>
             </div>
           </div>
@@ -369,6 +433,16 @@
                   comments. Quality satisfied. Prices democratic. I recommend
                   these masters.
                 </p>
+                <div class="clients-work">
+                  <div class="clients-work-m2">
+                    <img src="images/m2.svg" alt="" width="32" />
+                    <p>40m2</p>
+                  </div>
+                  <div class="clients-work-day">
+                    <img src="images/days.svg" alt="" width="32" />
+                    <p>48 DAYS</p>
+                  </div>
+                </div>
               </div>
               <div>
                 <div class="our-clients">
@@ -385,6 +459,16 @@
                   comments. Quality satisfied. Prices democratic. I recommend
                   these masters.
                 </p>
+                <div class="clients-work">
+                  <div class="clients-work-m2">
+                    <img src="images/m2.svg" alt="" width="32" />
+                    <p>90m2</p>
+                  </div>
+                  <div class="clients-work-day">
+                    <img src="images/days.svg" alt="" width="32" />
+                    <p>128 DAYS</p>
+                  </div>
+                </div>
               </div>
               <div>
                 <div class="our-clients">
@@ -401,10 +485,21 @@
                   comments. Quality satisfied. Prices democratic. I recommend
                   these masters.
                 </p>
+                <div class="clients-work">
+                  <div class="clients-work-m2">
+                    <img src="images/m2.svg" alt="" width="32" />
+                    <p>56m2</p>
+                  </div>
+                  <div class="clients-work-day">
+                    <img src="images/days.svg" alt="" width="32" />
+                    <p>86 DAYS</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+        <!--Нужна подсказка с questions-form-block!!! плиз-->
         <div class="questions-form-block">
           <h2 class="questions-form-subtitle">have any questions?</h2>
 
@@ -451,10 +546,18 @@
               Rostov-on-Don, Nansen St., 239 Shopping Center <br />
               Decorum Tel +7 (928) 768 32 29
             </p>
-            <img class="aur-adres-text-img" src="images/Ellipse.png" alt="" />
-            <img class="aur-adres-text-img" src="images/Ellipse.png" alt="" />
+            <div class="aur-adres-item">
+              <a href=""><img src="images/mail.svg" alt="" /></a>
+            </div>
+            <div class="aur-adres-item">
+              <a href=""><img src="images/inst.svg" alt="" /></a>
+            </div>
           </div>
-          <img src="images/map.png" alt="Карта росположение офиса" />
+          <img
+            class="aur-adres-img"
+            src="images/map.png"
+            alt="Карта росположение офиса"
+          />
         </section>
       </main>
       <footer>
@@ -469,7 +572,7 @@
               </li>
               <li><a class="nav-item" href="#team">TEAM</a></li>
               <li><a class="nav-item" href="#reviews">REVIEWS</a></li>
-              <li><a class="-nav-item" href="#contacts">CONTACTS</a></li>
+              <li><a class="nav-item" href="#contacts">CONTACTS</a></li>
             </ul>
           </nav>
           <div class="tel">+7 (928) 768-32-39</div>
