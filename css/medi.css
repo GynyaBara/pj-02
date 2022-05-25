@@ -66,7 +66,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 380px;
+    min-width: 340px;
     padding-left: 0;
     color: #fff;
   }
@@ -238,13 +238,14 @@
     display: block;
     margin-top: 52px;
   }
-  .questions-input-madia,
-  .input-know {
-    width: 340px;
+  .questions-form {
+    width: auto;
+    margin: 0;
   }
-  .questions-input-madia input {
-    width: 100%;
+  .questions-form div {
+    width: auto;
   }
+
   .adres {
     background-image: none;
     z-index: 0;
@@ -252,6 +253,16 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin: 0;
+  }
+  .input-know {
+    width: auto;
+  }
+  .questions-form input:nth-child(2n) {
+    width: 340px;
+  }
+  .question-button {
+    width: 90%;
   }
   .aur-adres-img {
     width: 90%;

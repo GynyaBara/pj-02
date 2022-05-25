@@ -5,6 +5,9 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
 }
+button {
+  cursor: pointer;
+}
 /*pictures for media query */
 .fantasies-bloc-img-madia {
   display: none;
@@ -38,8 +41,8 @@ h4 {
 .checkbox + label::before {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid #e3b873;
@@ -651,6 +654,7 @@ footer {
   background: #181818;
   font-size: 11px;
   line-height: 15px;
+  text-transform: uppercase;
 }
 .footer-wrap {
   padding-top: 48px;
