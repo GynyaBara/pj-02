@@ -24,7 +24,35 @@ h4 {
   font-family: "Yeseva One", cursive;
   margin: 0;
 }
-
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  margin-top: 26px;
+}
+.checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #e3b873;
+  background-color: #e3b873;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.checkbox:checked + label::before {
+  background-image: url("../images/chek.svg");
+  background-repeat: no-repeat;
+}
 .button {
   font-family: "Nunito Sans";
   font-style: italic;

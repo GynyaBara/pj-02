@@ -161,6 +161,9 @@
   .control-form-conteiner1 {
     margin-bottom: 60px;
   }
+  .control-form label {
+    color: #fff;
+  }
   .form-text {
     color: rgba(255, 255, 255, 0.5);
   }
